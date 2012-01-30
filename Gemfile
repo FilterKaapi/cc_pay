@@ -1,20 +1,28 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'sqlite3'
+gem 'will_paginate', '3.0.2'
+gem 'jquery-rails', '2.0.0'
 
 group :development do
 	gem	'rspec-rails', '2.6.1'
+	gem 'annotate', '2.4.0'
+	gem 'faker', '0.3.1'
 end
 
 group :test do
 	gem 'rspec-rails', '2.6.1'
 	gem	'webrat', '0.7.1'
+	gem 'autotest','4.4.6'
+	gem 'autotest-rails-pure', '4.1.2'
+	gem 'spork', '0.9.0'
+	gem 'factory_girl_rails', '1.0'
 end
+
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # Use unicorn as the web server
 # gem 'unicorn'.
