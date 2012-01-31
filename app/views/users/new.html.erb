@@ -1,2 +1,22 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Create New Alert</h1>
+<% form_for(@user) do	|f| %>
+	<div class="form-stacked">
+		<div class="clearfix">
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+		</div>
+		<div class="clearfix">
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+		</div>
+		<div class="clearfix">
+			<%= f.label :cc_name,"Credit Card Issuer Name" %>
+			<%= f.text_field :cc_name %>
+		</div>
+		<div class="clearfix">
+			<%= f.label :due_date %>
+			<%= f.text_field :due_date %>
+		</div>
+	</div>
+	<button type="submit" class="btn large primary"><strong>Create Alert<Strong></button>
+<% end %>
