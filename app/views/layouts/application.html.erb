@@ -9,11 +9,6 @@
 	</head>
 	<body>
 		<%= render "layouts/header" %>
-		<% flash.each do |key, value|  %>
-			<div class="span 12">
-				<div class="alert-message <%= key %>"><%= value %></div>
-			</div>
-		<% end %>
 		<div class="container">
 			<%= yield %>
 		</div>

@@ -1,0 +1,16 @@
+<% flash.each do |key, value|  %>
+			<div class="span12 offset4">
+					<div class="alert-message success">
+						<a class="close"></a>
+						<p><strong>Congratulations</strong> <%= @user.name %>! Your payment alert has been <strong>successfully</strong> created!!</p>
+					</div>
+			</div>
+<% end 	%>
+<div class="row">
+	<div class="span12">
+		<h4>You have successfully created an alert with the following details:</h4>
+Credit Card Issuer: <strong><%= @user.cc_name %></strong> <br/>
+Payment Due Date: <strong><%= @user.due_date %></strong>
+		</div>
+	</div>
+</div>
