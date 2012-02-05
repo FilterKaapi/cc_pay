@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.9'
 gem 'sqlite3'
 gem 'will_paginate', '3.0.2'
+gem 'actionmailer', '3.0.9'
+gem	'daemons', '1.1.6'
 
 group :development do
 	gem	'rspec-rails', '2.6.1'

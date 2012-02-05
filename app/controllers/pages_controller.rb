@@ -11,4 +11,8 @@ class PagesController < ApplicationController
   	@title = "About"
   end
 
+  def alert
+  	@title = "Alert Confirmation"
+  end
+
 end

@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   	@user = User.create(params[:user])
   	if @user.save
   		redirect_to user_path(@user)
+  		UserMailer.due_date_mail(@user).deliver
   	else
   		@title = "Create new alert"
   		render :new
